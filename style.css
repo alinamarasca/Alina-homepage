@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&family=Montserrat:wght@400;600&family=Teko:wght@500;600&display=swap");
+:root {
+  --bkgr-color: #fbe1e1;
+  --menu-blue: #0f00ff;
+  --crazy-violet: #9069e3;
+  --point-green: #579c11;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--bkgr-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*vertical alignment*/
+  justify-content: center; /*horizontal alignment*/
+}
+a {
+  text-decoration: none;
+}
+a :active {
+  text-decoration: none;
+}
+h2 {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  color: var(--menu-blue);
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.navbar {
+  font-family: "Teko", sans-serif;
+  color: var(--menu-blue);
+  font-size: 40px;
+  padding: 10px;
+  margin-top: 20px;
+}
+li {
+  display: inline;
+  margin: 10px 20px;
+}
+.intro {
+  max-width: 1000px;
+  margin: 20px;
+}
+.intro p {
+  font-family: "Hind", sans-serif;
+  font-size: 24px;
+  color: var(--crazy-violet);
+  text-align: center;
+}
+.card-left {
+  display: flex;
+  width: 1200px;
+  height: 200px;
+  background: linear-gradient(to right top, #fbe1e1, #ffffff63);
+  box-shadow: 0px 3px 6px 4px rgba(83, 11, 11, 0.287);
+  margin-bottom: 30px;
+}
+.card-right {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  height: 200px;
+  background: linear-gradient(to right top, #fbe1e1, #ffffff63);
+  box-shadow: 0px 3px 6px 4px rgba(83, 11, 11, 0.287);
+  margin-bottom: 30px;
+  align-content: space-around;
+}
+.preview {
+  width: 345px;
+  background-image: url(images/screenshot.png);
+  margin: 10px 20px 10px 10px;
+}
+.description {
+  width: 60%;
+  align-content: stretch;
+  margin: auto;
+}
+.icons {
+  margin-top: 10px;
+}
+.preview img {
+  object-fit: cover;
+  padding: 10px;
+  margin: auto;
+  height: 1px;
+}
